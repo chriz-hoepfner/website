@@ -17,6 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
         />
 
+        <meta name='description' content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development." />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"

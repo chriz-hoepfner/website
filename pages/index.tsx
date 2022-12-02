@@ -63,7 +63,7 @@ export default function Home() {
               <div className="hidden w-full max-w-[400px] overflow-hidden rounded-xl bg-waferWhite shadow-lg lg:block">
                 <Image
                   alt="Portrait photo"
-                  src="/images/portrait.png"
+                  src="/images/portrait.webp"
                   width={400}
                   height={400}
                   className="!aspect-square !w-full"
