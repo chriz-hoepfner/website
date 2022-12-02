@@ -10,14 +10,57 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Christian Höpfner | Website</title>
-
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
         />
 
-        <meta name='description' content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development." />
+        <title>Christian Höpfner | Website</title>
+
+        <meta
+          name="description"
+          content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development. Check out my website and get in touch to work with me."
+        />
+
+        <meta
+          key="og:title"
+          property="og:title"
+          content="Christian Höpfner | Website"
+        />
+
+        <meta
+          key="og:description"
+          property="og:description"
+          content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development. Check out my website and get in touch to work with me."
+        />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content="http://christian-hoepfner.com/images/og_preview.jpg"
+        />
+
+        <meta
+          key="twitter:label1"
+          property="twitter:label1"
+          content="Christian Höpfner"
+        />
+
+        <meta
+          key="twitter:data1"
+          property="twitter:data1"
+          content="Software Engineer"
+        />
+
+        <meta name="author" content="Christian Höpfner" />
+
+        <meta
+          key="twitter:label2"
+          property="twitter:label2"
+          content="Read time"
+        />
+
+        <meta key="twitter:data2" property="twitter:data2" content="2min" />
 
         <link
           rel="apple-touch-icon"
