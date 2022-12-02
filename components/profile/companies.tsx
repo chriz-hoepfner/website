@@ -8,6 +8,7 @@ import { SirupLogo } from 'components/logos/sirup';
 interface ICompany {
   Logo(): JSX.Element;
   href: string;
+  title: string;
 }
 
 const container: Variants = {
@@ -22,18 +23,22 @@ const COMPANIES: ICompany[] = [
   {
     Logo: SirupLogo,
     href: 'https://www.sirup.com/',
+    title: 'Website of SIRUP',
   },
   {
     Logo: ProjectALogo,
     href: 'https://www.project-a.com/',
+    title: 'Website of Project A',
   },
   {
     Logo: CleverShuttleLogo,
     href: 'https://www.clevershuttle.de/',
+    title: 'Website of CleverShuttle',
   },
   {
     Logo: AcehubLogo,
     href: 'https://acehub.io/',
+    title: 'Website of acehub',
   },
 ];
 
@@ -41,7 +46,7 @@ interface ICompanyLinkProps {
   company: ICompany;
 }
 const CompanyLink = ({ company }: ICompanyLinkProps) => {
-  const { Logo, href } = company;
+  const { Logo, href, title } = company;
 
   return (
     <a
@@ -49,6 +54,7 @@ const CompanyLink = ({ company }: ICompanyLinkProps) => {
       target="_blank"
       rel="noreferrer"
       className="m-2 p-2 transition-colors hover:text-white/80"
+      title={title}
     >
       <Logo />
     </a>

@@ -48,11 +48,11 @@ export const About = () => {
         <div className="relative mt-10 aspect-square w-full max-w-[150px] flex-shrink overflow-hidden rounded-full bg-contessaRed shadow-lg xs:ml-8 xs:mt-0 xs:max-w-[200px] lg:hidden">
           <Image
             alt="Portrait photo"
-            src="/images/portrait.png"
-            width={300}
-            height={300}
+            src="/images/portrait.webp"
+            width={200}
+            height={200}
             className="!aspect-square !w-full"
-          />
+          ></Image>
         </div>
       </motion.div>
 
