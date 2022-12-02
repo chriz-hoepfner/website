@@ -16,11 +16,15 @@ jobs:
         with:
           node-version: 16
 
+      - name: 'Setup: Get yarn cache directory path'
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
       - name: 'Setup: Cache'
         uses: actions/cache@v3.0.11
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn-lock.json') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
@@ -34,12 +38,12 @@ jobs:
         run: yarn build && yarn export
 
       - name: 'Deploy: FTP deployment'
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
-          server: wp10663825.server-he.de
-          username: ftp10663825-chris
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          server-dir: www/
-          local-dir: 'out/'
-          dangerous-clean-slate: false
+          ftp_host: wp10663825.server-he.de
+          ftp_username: ftp10663825-chris
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: 'out'
+          dist_target_dir: www
+          delete: true
+          other_flags: '-P 10'
