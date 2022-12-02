@@ -41,18 +41,22 @@ export const About = () => {
         className="flex flex-col items-center xs:flex-row"
       >
         <h1 className="flex-shrink-0 flex-grow font-bold leading-[1.1]">
-          <div className="text-[60px] sm:text-[82px]">Christian</div>
-          <div className="text-[66px] sm:text-[92px]">Höpfner</div>
+          <div className="text-[60px] sm:text-[80px]">Christian</div>
+          <div className="text-[68px] sm:text-[92px]">Höpfner</div>
         </h1>
 
-        <div className="relative mt-10 aspect-square w-full max-w-[150px] flex-shrink overflow-hidden rounded-full bg-contessaRed shadow-lg xs:ml-8 xs:mt-0 xs:max-w-[200px] lg:hidden">
-          <Image
-            alt="Portrait photo"
-            src="/images/portrait.webp"
-            width={200}
-            height={200}
-            className="!aspect-square !w-full"
-          ></Image>
+        <div className="relative mt-8 flex-shrink xs:ml-12 xs:mt-0 lg:hidden">
+          <div className="absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full bg-contessaRed shadow-md"></div>
+
+          <div className="relative w-full max-w-[200px] overflow-hidden rounded-full">
+            <Image
+              alt="Portrait photo"
+              src="/images/portrait_circle.webp"
+              width={175}
+              height={219}
+              className="!aspect-[4/5] !w-full"
+            />
+          </div>
         </div>
       </motion.div>
 

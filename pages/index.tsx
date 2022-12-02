@@ -60,14 +60,18 @@ export default function Home() {
             className="flex w-full flex-col items-center justify-center lg:max-w-[750px]"
           >
             <div className="pt-[75px] pb-3 lg:p-0">
-              <div className="hidden w-full max-w-[400px] overflow-hidden rounded-xl bg-waferWhite shadow-lg lg:block">
-                <Image
-                  alt="Portrait photo"
-                  src="/images/portrait.webp"
-                  width={400}
-                  height={400}
-                  className="!aspect-square !w-full"
-                />
+              <div className="relative hidden lg:block">
+                <div className="absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full bg-waferWhite shadow-md"></div>
+
+                <div className="relative w-full max-w-[400px] overflow-hidden rounded-xl ">
+                  <Image
+                    alt="Portrait photo"
+                    src="/images/portrait_circle.webp"
+                    width={400}
+                    height={500}
+                    className="!aspect-[4/5] !w-full rounded-b-full"
+                  />
+                </div>
               </div>
 
               <div className="lg:mt-12">
