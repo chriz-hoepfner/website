@@ -14,8 +14,8 @@
     "check-format": "prettier --check \"./pages/**/*\" \"./components/**/*\"",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "test-all": "yarn check-format && yarn check-lint && yarn check-types",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook-dev": "start-storybook -p 6006",
+    "storybook-build": "build-storybook"
   },
   "dependencies": {
     "classnames": "2.3.2",

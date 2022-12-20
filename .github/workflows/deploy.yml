@@ -34,10 +34,10 @@ jobs:
       - name: 'Quality: ESlint'
         run: yarn lint
 
-      - name: 'Build: run dist build'
+      - name: 'Build: run website build'
         run: yarn build && yarn export
 
-      - name: 'Deploy: FTP deployment'
+      - name: 'Deploy: FTP website deployment'
         uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
           ftp_host: wp10663825.server-he.de
@@ -45,5 +45,19 @@ jobs:
           ftp_password: ${{ secrets.FTP_PASSWORD }}
           local_source_dir: 'out'
           dist_target_dir: www
+          delete: true
+          other_flags: '-P 10'
+
+      - name: 'Build: run Storybook build'
+        run: yarn storybook-build
+
+      - name: 'Deploy: FTP Storybook deployment'
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        with:
+          ftp_host: wp10663825.server-he.de
+          ftp_username: ftp10663825-chris
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: 'storybook-static'
+          dist_target_dir: subdomains/storybook
           delete: true
           other_flags: '-P 10'
