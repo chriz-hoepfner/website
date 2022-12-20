@@ -17,7 +17,7 @@ const LINKS: ILink[] = [
   },
   {
     label: 'Storybook',
-    href: 'https://storybook.christian-hoepfner.com/',
+    href: 'https://christian-hoepfner.com/storybook',
   },
 ];
 

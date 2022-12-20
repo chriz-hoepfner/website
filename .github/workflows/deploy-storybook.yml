@@ -1,0 +1,46 @@
+name: Deploy Storybook
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Setup: Checkout'
+        uses: actions/checkout@v3.1.0
+
+      - name: 'Setup: Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 'Setup: Get yarn cache directory path'
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
+
+      - name: 'Setup: Cache'
+        uses: actions/cache@v3.0.11
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: 'Setup: Install dependencies'
+        run: yarn install --frozen-lockfile
+
+      - name: 'Build: run Storybook build'
+        run: yarn storybook-build
+
+      - name: 'Deploy: FTP Storybook deployment'
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        with:
+          ftp_host: wp10663825.server-he.de
+          ftp_username: ftp10663825-chris
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: 'storybook-static'
+          dist_target_dir: www/storybook
+          delete: true
+          other_flags: '-P 10'
