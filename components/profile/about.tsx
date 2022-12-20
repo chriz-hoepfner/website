@@ -78,14 +78,14 @@ export const About = () => {
           className="text-xl leading-[1.7] xs:leading-[1.5]"
         >
           <p className="mt-7">
-            Hi, I&apos;m a Software Engineer from Berlin with{' '}
-            <strong>10+ years of experience</strong> in Frontend/Full-Stack
+            Hi, I&apos;m Chris, a Software Engineer from Berlin with{' '}
+            <strong>10+ years of experience</strong> in Frontend and Full-Stack
             development.
           </p>
 
           <p className="mt-3">
             Currently, I am looking for a new challenge as{' '}
-            <strong>Lead/Senior Engineer</strong> to take{' '}
+            <strong>Lead or Senior Engineer</strong> to take{' '}
             <strong>team/product</strong> responsibilities, bring in experience
             and dedication.
           </p>
@@ -94,22 +94,28 @@ export const About = () => {
             <Foldable>
               <div className="mt-6 leading-[1.8]">
                 <p>
-                  In the past, I&apos;ve worked with many companies, supporting
-                  them with{' '}
+                  In the past, I have worked with many companies (startups and
+                  PE), supporting them with{' '}
                   <strong>
                     audits, system design, development and recruiting
                   </strong>
-                  . During my time at Project A, I had the opportunity to
-                  <strong>lead an amazing team</strong> of six frontend
-                  engineers and gain first leadership experience.
+                  . During my time at Project A, I had the opportunity to gain
+                  first leadership experience while{' '}
+                  <strong>leading a great team</strong> of six frontend
+                  engineers.
                 </p>
 
                 <p className="mt-3">
                   This year, as technical <strong>co-founder</strong>, I took
-                  the chance to kick-start a SaaS B2B product, gaining a more
-                  holistic view on the{' '}
-                  <strong>importance of business impact of tech</strong>.
+                  the exciting chance to kick-start a <strong>SaaS B2B</strong>{' '}
+                  company. It helped me a lot to gain a more holistic view on
+                  the <strong>business value of tech</strong>. After
+                  successfully <strong>launching an MVP</strong> to customers
+                  and securing <strong>pre-seed VC funding</strong>, I decided
+                  to end this journey.
                 </p>
+
+                <p className="mt-3">Now it&apos;s time to start a new one!</p>
               </div>
             </Foldable>
           </div>

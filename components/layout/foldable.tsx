@@ -43,10 +43,16 @@ export const Foldable = ({ children }: PropsWithChildren) => {
         {!isOpen && (
           <motion.button
             {...animationStates}
-            className="origin-left text-base transition-transform duration-300 ease-in-out hover:scale-125"
+            className="group relative  "
             onClick={toggle}
           >
-            Read more ...
+            <span className="absolute left-0 font-bold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              →
+            </span>
+
+            <div className="border-b text-base transition-transform duration-300 group-hover:translate-x-7">
+              Read more
+            </div>
           </motion.button>
         )}
 
