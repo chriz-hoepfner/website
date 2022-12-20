@@ -16,8 +16,8 @@ const LINKS: ILink[] = [
     href: 'https://github.com/chriz-hoepfner',
   },
   {
-    label: 'The Useless Web',
-    href: 'https://www.theuselessweb.com/',
+    label: 'Storybook',
+    href: 'https://storybook.christian-hoepfner.com/',
   },
 ];
 

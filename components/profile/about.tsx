@@ -1,6 +1,8 @@
 import { Variant, Variants, motion } from 'framer-motion';
 import Image from 'next/image';
 
+import { Foldable } from 'components/layout/foldable';
+
 const container: Variants = {
   hidden: { opacity: 0 },
   visible: () => ({
@@ -65,13 +67,17 @@ export const About = () => {
         <motion.div variants={child}>
           <div className="mt-10 text-xs uppercase">{'//'} About me</div>
 
-          <h2 className="mt-2 text-2xl font-bold">
-            Looking for a Full-Stack TypeScript Engineer?
+          <h2 className="mt-4 text-2xl font-bold leading-[1.7] xs:text-3xl xs:leading-[1.5]">
+            If you are looking for a Full-Stack TypeScript Engineer, you just
+            came to the right place.
           </h2>
         </motion.div>
 
-        <motion.div variants={child} className="leading-[1.8]">
-          <p className="mt-6">
+        <motion.div
+          variants={child}
+          className="text-xl leading-[1.7] xs:leading-[1.5]"
+        >
+          <p className="mt-7">
             Hi, I&apos;m a Software Engineer from Berlin with{' '}
             <strong>10+ years of experience</strong> in Frontend/Full-Stack
             development.
@@ -83,38 +89,37 @@ export const About = () => {
             <strong>team/product</strong> responsibilities, bring in experience
             and dedication.
           </p>
+
+          <div className="mt-4">
+            <Foldable>
+              <div className="mt-6 leading-[1.8]">
+                <p>
+                  In the past, I&apos;ve worked with many companies, supporting
+                  them with{' '}
+                  <strong>
+                    audits, system design, development and recruiting
+                  </strong>
+                  . During my time at Project A, I had the opportunity to
+                  <strong>lead an amazing team</strong> of six frontend
+                  engineers and gain first leadership experience.
+                </p>
+
+                <p className="mt-3">
+                  This year, as technical <strong>co-founder</strong>, I took
+                  the chance to kick-start a SaaS B2B product, gaining a more
+                  holistic view on the{' '}
+                  <strong>importance of business impact of tech</strong>.
+                </p>
+              </div>
+            </Foldable>
+          </div>
         </motion.div>
 
-        <motion.div variants={child} className="leading-[1.8]">
-          <p className="mt-3">
-            In the past I&apos;ve been working with many companies, supporting
-            them with{' '}
-            <strong>audits, system design, development and recruiting</strong>.
-          </p>
-
-          <p className="mt-3">
-            During my time at Project A I had the opportunity to{' '}
-            <strong>lead an amazing team</strong> of 6 frontend engineers.
-          </p>
-        </motion.div>
-
-        <motion.div variants={child} className="leading-[1.8]">
-          <p className="mt-3">
-            This year, as technical <strong>co-founder</strong>, I took the
-            chance to kick-start a SaaS B2B product, gaining a more holistic
-            view on the <strong>importance of business impact of tech</strong>.
-          </p>
+        <motion.div variants={child} className="text-xl leading-[1.8]">
+          <p className="mt-6">Happy to get in touch.</p>
+          <p className="mt-1 font-cursive text-4xl">Cheers Chris</p>
         </motion.div>
       </div>
-
-      <motion.div variants={child} className="leading-[1.8]">
-        <p className="mt-6">
-          Happy to get in touch and exchange
-          <br /> about interesting opportunities.
-        </p>
-
-        <p className="mt-4  font-cursive text-4xl">Cheers Chris</p>
-      </motion.div>
     </motion.article>
   );
 };
