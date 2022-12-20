@@ -5,8 +5,11 @@ import { ImprintContextProvider } from 'components/layout/imprintContext';
 import { ImprintDialog } from 'components/layout/imprintDialog';
 
 import '../styles/globals.css';
+import { useDarkModeDetection } from './_app.hooks';
 
 export default function App({ Component, pageProps }: AppProps) {
+  useDarkModeDetection();
+
   return (
     <>
       <Head>

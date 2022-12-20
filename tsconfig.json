@@ -16,14 +16,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "clients/*": ["./clients/*"],
       "components/*": ["./components/*"],
       "types/*": ["./types/*"],
       "constants/*": ["./constants/*"],
-      "api/*": ["./api/*"],
       "hooks/*": ["./hooks/*"],
-      "lib/*": ["./lib/*"],
-      "helpers/*": ["./helpers/*"]
+      "services/*": ["./services/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

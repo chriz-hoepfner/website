@@ -12,8 +12,15 @@ const ImprintContext = createContext<{
   closeDialog(): void;
 }>({ isVisible: false, openDialog: () => {}, closeDialog: () => {} });
 
-export const ImprintContextProvider = ({ children }: PropsWithChildren) => {
-  const [isVisible, setIsVisible] = useState(false);
+interface IProps {
+  isInitiallyVisible?: boolean;
+}
+
+export const ImprintContextProvider = ({
+  children,
+  isInitiallyVisible = false,
+}: PropsWithChildren<IProps>) => {
+  const [isVisible, setIsVisible] = useState(isInitiallyVisible);
 
   const openDialog = useCallback(() => {
     setIsVisible(true);

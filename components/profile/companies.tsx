@@ -11,34 +11,26 @@ interface ICompany {
   title: string;
 }
 
-const container: Variants = {
-  hidden: { opacity: 0 },
-  visible: () => ({
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.5 },
-  }),
-};
-
 const COMPANIES: ICompany[] = [
   {
     Logo: SirupLogo,
     href: 'https://www.sirup.com/',
-    title: 'Website of SIRUP',
+    title: 'Components/Website of SIRUP',
   },
   {
     Logo: ProjectALogo,
     href: 'https://www.project-a.com/',
-    title: 'Website of Project A',
+    title: 'Components/Website of Project A',
   },
   {
     Logo: CleverShuttleLogo,
     href: 'https://www.clevershuttle.de/',
-    title: 'Website of CleverShuttle',
+    title: 'Components/Website of CleverShuttle',
   },
   {
     Logo: AcehubLogo,
     href: 'https://acehub.io/',
-    title: 'Website of acehub',
+    title: 'Components/Website of acehub',
   },
 ];
 

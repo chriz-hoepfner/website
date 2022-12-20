@@ -31,7 +31,8 @@ const child: Variants = {
 export const About = () => {
   return (
     <motion.article
-      className="relative"
+      className="relativ
+      "
       variants={container}
       initial="hidden"
       animate="visible"
@@ -112,7 +113,7 @@ export const About = () => {
           <br /> about interesting opportunities.
         </p>
 
-        <p className="mt-4  font-cursive text-4xl">Cheers Christian</p>
+        <p className="mt-4  font-cursive text-4xl">Cheers Chris</p>
       </motion.div>
     </motion.article>
   );

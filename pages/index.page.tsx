@@ -33,7 +33,7 @@ const child: Variants = {
     },
   },
 };
-export default function Home() {
+export const Home = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
       <motion.div
@@ -42,7 +42,7 @@ export default function Home() {
         animate="visible"
         className="relative flex flex-grow flex-col lg:flex-row"
       >
-        <section className="flex items-center justify-end bg-dawnPink lg:h-full lg:w-1/2">
+        <section className="flex items-center justify-end bg-dawnPink text-gray-900 transition-colors dark:bg-gray-900 dark:text-gray-100 lg:h-full lg:w-1/2">
           <div className="w-full max-w-[850px] p-[50px] pb-[110px] lg:p-[100px]">
             <About />
           </div>
@@ -86,4 +86,6 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;

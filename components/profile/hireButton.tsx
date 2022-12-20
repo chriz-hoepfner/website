@@ -2,7 +2,7 @@ import { LINKED_IN } from 'constants/urls';
 
 export const HireButton = () => {
   return (
-    <>
+    <div className="relative">
       <div className="absolute h-full w-full animate-ping rounded-full bg-white opacity-50"></div>
 
       <a
@@ -19,6 +19,6 @@ export const HireButton = () => {
           </div>
         </span>
       </a>
-    </>
+    </div>
   );
 };
