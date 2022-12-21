@@ -2,6 +2,11 @@ name: Deploy Storybook
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 'Deploy Website'
+    types:
+      - 'completed'
 
 jobs:
   deploy:
@@ -43,4 +48,4 @@ jobs:
           local_source_dir: 'storybook-static'
           dist_target_dir: www/storybook
           delete: true
-          other_flags: '-P 10'
+          other_flags: '-P 8'

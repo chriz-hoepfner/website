@@ -11,6 +11,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook-tailwind-dark-mode',
+    'storybook-addon-turbo-build',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -26,7 +27,6 @@ module.exports = {
   },
   webpackFinal: config => {
     config.resolve.alias = {
-      // '@': [path.resolve(__dirname, '../src/'), path.resolve(__dirname, '../')],
       components: path.resolve(__dirname, '../components/'),
       types: path.resolve(__dirname, '../types/'),
       constants: path.resolve(__dirname, '../constants/'),

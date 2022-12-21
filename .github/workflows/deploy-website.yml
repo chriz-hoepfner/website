@@ -46,4 +46,4 @@ jobs:
           local_source_dir: 'out'
           dist_target_dir: www
           delete: true
-          other_flags: '-P 10'
+          other_flags: '-P 8'
