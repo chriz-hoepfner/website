@@ -2,6 +2,7 @@ import { Variant, Variants, motion } from 'framer-motion';
 import Image from 'next/image';
 
 import { Foldable } from 'components/layout/foldable';
+import { Avatar } from 'components/shared/avatar';
 
 const container: Variants = {
   hidden: { opacity: 0 },
@@ -48,18 +49,8 @@ export const About = () => {
           <div className="text-[68px] sm:text-[92px]">Höpfner</div>
         </h1>
 
-        <div className="relative mt-8 flex-shrink xs:ml-12 xs:mt-0 lg:hidden">
-          <div className="absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full bg-contessaRed shadow-md"></div>
-
-          <div className="relative w-full max-w-[200px] overflow-hidden rounded-full">
-            <Image
-              alt="Portrait photo"
-              src="/images/portrait_circle.webp"
-              width={175}
-              height={219}
-              className="!aspect-[4/5] !w-full"
-            />
-          </div>
+        <div className="mt-8 max-w-[200px] flex-shrink xs:ml-12 xs:mt-0 lg:hidden">
+          <Avatar bg="contessaRed" />
         </div>
       </motion.div>
 

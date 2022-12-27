@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { LINKED_IN } from 'constants/urls';
 
 import { useImprint } from './imprintContext';
@@ -39,6 +41,12 @@ export const Footer = () => {
           {label}
         </a>
       ))}
+
+      <Link href="/cv">
+        <span className="my-2 inline-block rounded-xl bg-sungloRed p-2 px-3 font-bold text-white sm:my-0">
+          CV
+        </span>
+      </Link>
 
       <button
         className="p-2 hover:text-white/80"

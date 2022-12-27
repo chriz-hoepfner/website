@@ -15,6 +15,8 @@ module.exports = {
         waferWhite: '#e7d9d9',
         dawnPink: '#F2E5E5',
         contessaRed: '#CE7777',
+        sungloRed: '#e16666',
+        buntingBlue: '#181c53',
       },
       screens: {
         xs: '475px',

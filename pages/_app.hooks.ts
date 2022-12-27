@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 
+import { useDarkModeQuery } from 'hooks/mediaQueries';
+
 export const useDarkModeDetection = () => {
+  const { isDarkMode } = useDarkModeQuery();
+
   const updateDarkMode = (prefersDarkMode: boolean) => {
     if (prefersDarkMode) {
       document.querySelector('html')?.classList.add('dark');
@@ -10,11 +14,6 @@ export const useDarkModeDetection = () => {
   };
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-    updateDarkMode(mediaQuery.matches);
-    mediaQuery.addEventListener('change', () =>
-      updateDarkMode(mediaQuery.matches),
-    );
-  }, []);
+    updateDarkMode(isDarkMode);
+  }, [isDarkMode]);
 };

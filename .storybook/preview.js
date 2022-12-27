@@ -23,7 +23,11 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Pages', 'Components'],
+      order: [
+        'Pages',
+        'Components',
+        ['Layout', 'Shared', 'Profile', 'CV', 'Logos'],
+      ],
     },
   },
   previewTabs: {

@@ -1,13 +1,13 @@
 import { Variants, motion } from 'framer-motion';
-import Image from 'next/image';
 
 import { Footer } from 'components/layout/footer';
 import { About } from 'components/profile/about';
 import { Companies } from 'components/profile/companies';
 import { HireButton } from 'components/profile/hireButton';
 import { Skills } from 'components/profile/skills';
+import { Avatar } from 'components/shared/avatar';
 
-const container: Variants = {
+export const container: Variants = {
   hidden: { opacity: 0 },
   visible: () => ({
     opacity: 1,
@@ -15,7 +15,7 @@ const container: Variants = {
   }),
 };
 
-const child: Variants = {
+export const child: Variants = {
   hidden: {
     opacity: 0,
     x: 30,
@@ -33,6 +33,7 @@ const child: Variants = {
     },
   },
 };
+
 export const Home = () => {
   return (
     <div className="flex h-screen w-screen flex-col">
@@ -60,18 +61,8 @@ export const Home = () => {
             className="flex w-full flex-col items-center justify-center lg:max-w-[750px]"
           >
             <div className="pt-[75px] pb-3 lg:p-0">
-              <div className="relative hidden lg:block">
-                <div className="absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full bg-waferWhite shadow-md"></div>
-
-                <div className="relative w-full max-w-[400px] overflow-hidden rounded-xl ">
-                  <Image
-                    alt="Portrait photo"
-                    src="/images/portrait_circle.webp"
-                    width={400}
-                    height={500}
-                    className="!aspect-[4/5] !w-full rounded-b-full"
-                  />
-                </div>
+              <div className="hidden max-w-[400px] lg:block">
+                <Avatar bg="waferWhite" />
               </div>
 
               <div className="lg:mt-12">
