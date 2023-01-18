@@ -10,7 +10,7 @@ export const Avatar = ({ bg }: IProps) => {
     <div className="relative max-w-[400px]">
       <div
         className={classNames(
-          'absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full shadow-md print:border-2',
+          'absolute bottom-0 left-0 right-0 aspect-square w-full rounded-full shadow-md print:border-2 print:shadow-none',
           {
             'bg-contessaRed': bg === 'contessaRed',
             'bg-waferWhite': bg === 'waferWhite',
@@ -18,7 +18,7 @@ export const Avatar = ({ bg }: IProps) => {
         )}
       ></div>
 
-      <div className="relative w-full overflow-hidden rounded-xl ">
+      <div className="relative w-full overflow-hidden rounded-xl">
         <Image
           alt="Portrait photo"
           src="/images/portrait_circle.webp"
