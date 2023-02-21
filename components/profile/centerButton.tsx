@@ -1,6 +1,6 @@
 import { LINKED_IN } from 'constants/urls';
 
-export const HireButton = () => {
+export const CenterButton = () => {
   return (
     <div className="relative">
       <div className="absolute h-full w-full animate-ping rounded-full bg-white opacity-50"></div>
@@ -12,10 +12,10 @@ export const HireButton = () => {
         rel="noreferrer"
       >
         <span className="origin-center -rotate-12 text-gray-800 motion-safe:animate-spin">
-          <div className="text-center font-serif text-[30px] font-bold uppercase leading-tight transition-all md:text-[40px] lg:text-[30px] 2xl:text-[40px]">
-            Hire
+          <div className="text-center font-serif text-[24px] font-bold uppercase leading-tight transition-all md:text-[34px] lg:text-[24px] 2xl:text-[34px]">
+            Get in
             <br />
-            me!
+            touch
           </div>
         </span>
       </a>

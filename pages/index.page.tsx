@@ -2,8 +2,8 @@ import { Variants, motion } from 'framer-motion';
 
 import { Footer } from 'components/layout/footer';
 import { About } from 'components/profile/about';
+import { CenterButton } from 'components/profile/centerButton';
 import { Companies } from 'components/profile/companies';
-import { HireButton } from 'components/profile/hireButton';
 import { Skills } from 'components/profile/skills';
 import { Avatar } from 'components/shared/avatar';
 
@@ -52,7 +52,7 @@ export const Home = () => {
         <section className="relative flex min-h-[400px] flex-col items-start justify-center bg-contessaRed p-[50px] lg:w-1/2 lg:p-[100px]">
           <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 lg:top-1/2 lg:left-0">
             <motion.div variants={child}>
-              <HireButton />
+              <CenterButton />
             </motion.div>
           </div>
 

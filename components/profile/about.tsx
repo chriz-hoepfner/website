@@ -32,10 +32,11 @@ const child: Variants = {
 };
 
 export const About = () => {
+  const experienceInYears = new Date().getFullYear() - 2013;
+
   return (
     <motion.article
-      className="relativ
-      "
+      className="relative"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -59,8 +60,9 @@ export const About = () => {
           <div className="mt-10 text-xs uppercase">{'//'} About me</div>
 
           <h2 className="mt-4 text-2xl font-bold leading-[1.7] xs:text-3xl xs:leading-[1.5]">
-            If you are looking for a Full-Stack TypeScript Engineer, you just
-            came to the right place.
+            Hi, I&apos;m Chris, a Software Engineer from Berlin with{' '}
+            <strong>{experienceInYears}+ years of experience</strong> in
+            software development.
           </h2>
         </motion.div>
 
@@ -68,17 +70,12 @@ export const About = () => {
           variants={child}
           className="text-xl leading-[1.7] xs:leading-[1.5]"
         >
-          <p className="mt-7">
-            Hi, I&apos;m Chris, a Software Engineer from Berlin with{' '}
-            <strong>10+ years of experience</strong> in Frontend and Full-Stack
-            development.
-          </p>
+          <p className="mt-7"></p>
 
           <p className="mt-3">
-            Currently, I am looking for a new challenge as{' '}
-            <strong>Lead or Senior Engineer</strong> to take{' '}
-            <strong>team/product</strong> responsibilities, bring in experience
-            and dedication.
+            I just started a new challenge as{' '}
+            <strong>Fullstack Engineer</strong> at <strong>Cozero</strong>{' '}
+            supporting companies on their decarbonization journey.
           </p>
 
           <div className="mt-4">

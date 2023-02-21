@@ -1,7 +1,6 @@
-import { Variants } from 'framer-motion';
-
 import { AcehubLogo } from 'components/logos/acehub';
 import { CleverShuttleLogo } from 'components/logos/cleverShuttle';
+import { CozeroLogo } from 'components/logos/cozero';
 import { ProjectALogo } from 'components/logos/projectA';
 import { SirupLogo } from 'components/logos/sirup';
 
@@ -15,22 +14,27 @@ const COMPANIES: ICompany[] = [
   {
     Logo: SirupLogo,
     href: 'https://www.sirup.com/',
-    title: 'Components/Website of SIRUP',
+    title: 'Website of SIRUP',
   },
   {
     Logo: ProjectALogo,
     href: 'https://www.project-a.com/',
-    title: 'Components/Website of Project A',
+    title: 'Website of Project A',
   },
   {
     Logo: CleverShuttleLogo,
     href: 'https://www.clevershuttle.de/',
-    title: 'Components/Website of CleverShuttle',
+    title: 'Website of CleverShuttle',
   },
   {
     Logo: AcehubLogo,
     href: 'https://acehub.io/',
-    title: 'Components/Website of acehub',
+    title: 'Website of acehub',
+  },
+  {
+    Logo: CozeroLogo,
+    href: 'https://cozero.io/',
+    title: 'Website of Cozero',
   },
 ];
 
