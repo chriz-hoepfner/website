@@ -11243,10 +11243,10 @@ storybook-addon-turbo-build@1.1.0:
   dependencies:
     esbuild-loader "^2.10.0"
 
-storybook-tailwind-dark-mode@1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/storybook-tailwind-dark-mode/-/storybook-tailwind-dark-mode-1.0.15.tgz#ae86d30122b720d63c4a425335d40da6c4ca5de5"
-  integrity sha512-rIN8vNqzKYN1wyZLfd1Wm4OwbNsaOJfnyc8gAkXTEMbmwaOF8vzOQMznuVdera4GdRtvCFkhhsf/IcYOkrrg1g==
+storybook-tailwind-dark-mode@1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/storybook-tailwind-dark-mode/-/storybook-tailwind-dark-mode-1.0.22.tgz#1a873e36375d53ea709ad61169cb12840c07ae39"
+  integrity sha512-I0HSVCuvo3OkaGDnCjLM7V1OYmQccrUCAGZ5ZaJfl9s3e93WA6DKFpQRbuoSidci+PTy+KvgrINgE08rA16bWA==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
