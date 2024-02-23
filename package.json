@@ -45,7 +45,7 @@
     "@types/react-dom": "18.0.7",
     "autoprefixer": "10.4.17",
     "babel-loader": "8.3.0",
-    "eslint": "8.26.0",
+    "eslint": "8.57.0",
     "eslint-config-next": "13.0.0",
     "eslint-plugin-storybook": "0.6.15",
     "flat": "5.0.2",
