@@ -67,7 +67,7 @@ const Stage = ({ stage }: IProps) => {
           />
         </div>
 
-        <div className="col-span-10 print:col-span-7 print:break-inside-avoid md:col-span-7">
+        <div className="col-span-10 md:col-span-7 print:col-span-7 print:break-inside-avoid">
           <TimelineItem
             title={stage.title}
             subtitle={stage.subtitle}
@@ -85,7 +85,7 @@ const Stage = ({ stage }: IProps) => {
       <Fragment>
         <div className="col-span-2 print:break-inside-avoid"></div>
 
-        <div className="col-span-10 -mb-2 mt-4 print:col-span-7 print:break-inside-avoid md:col-span-7">
+        <div className="col-span-10 -mb-2 mt-4 md:col-span-7 print:col-span-7 print:break-inside-avoid">
           <TimelineItem title={stage.title} important={stage.important} />
         </div>
 
@@ -100,7 +100,7 @@ const Stage = ({ stage }: IProps) => {
                 />
               </div>
 
-              <div className="col-span-10 -mt-2 print:col-span-7 print:break-inside-avoid md:col-span-7">
+              <div className="col-span-10 -mt-2 md:col-span-7 print:col-span-7 print:break-inside-avoid">
                 <TimelineItem
                   subtitle={item.subtitle}
                   description={item.description}
@@ -112,7 +112,7 @@ const Stage = ({ stage }: IProps) => {
           );
         })}
 
-        <div className="col-span-12 mb-1 print:col-span-9 md:col-span-9"></div>
+        <div className="col-span-12 mb-1 md:col-span-9 print:col-span-9"></div>
       </Fragment>
     );
   }
@@ -139,15 +139,15 @@ export const CV = () => {
           <Link href={'/'}>← Back to home</Link>
         </div>
 
-        <div className="w-full max-w-5xl p-6 pt-6 pb-12 print:pl-0 print:pb-0 md:pl-0">
+        <div className="w-full max-w-5xl p-6 pb-12 pt-6 md:pl-0 print:pb-0 print:pl-0">
           <div className="grid w-full grid-cols-12 gap-4">
-            <div className="col-span-12 col-start-1 print:col-span-9 md:col-span-9">
-              <div className="grid grid-cols-12 gap-4  print:grid-cols-9 md:grid-cols-9">
+            <div className="col-span-12 col-start-1 md:col-span-9 print:col-span-9">
+              <div className="grid grid-cols-12 gap-4  md:grid-cols-9 print:grid-cols-9">
                 <motion.div
                   variants={child}
-                  className="col-span-12 col-start-3 print:col-span-6 print:col-start-3 md:col-span-6 md:col-start-3"
+                  className="col-span-12 col-start-3 md:col-span-6 md:col-start-3 print:col-span-6 print:col-start-3"
                 >
-                  <h1 className="text-5xl font-bold leading-none print:text-5xl md:text-7xl">
+                  <h1 className="text-5xl font-bold leading-none md:text-7xl print:text-5xl">
                     Christian Höpfner
                   </h1>
 
@@ -158,9 +158,9 @@ export const CV = () => {
 
                 <motion.div
                   variants={child}
-                  className="col-span-12 mt-4 print:col-span-9 md:col-span-9"
+                  className="col-span-12 mt-4 md:col-span-9 print:col-span-9"
                 >
-                  <div className="grid grid-cols-12 gap-y-1 gap-x-4 print:grid-cols-9 print:gap-y-0 md:grid-cols-9">
+                  <div className="grid grid-cols-12 gap-x-4 gap-y-1 md:grid-cols-9 print:grid-cols-9 print:gap-y-0">
                     {BASE_INFOS.map((info, index) => {
                       return (
                         <Fragment key={index}>
@@ -168,7 +168,7 @@ export const CV = () => {
                             <Label>{info.label}</Label>
                           </div>
 
-                          <div className="col-span-10 flex items-center text-base print:col-span-7 md:col-span-7">
+                          <div className="col-span-10 flex items-center text-base md:col-span-7 print:col-span-7">
                             {info.data}
                           </div>
                         </Fragment>
@@ -179,7 +179,7 @@ export const CV = () => {
               </div>
             </div>
 
-            <div className="col-span-12 row-span-full row-start-1 print:col-span-3 print:col-start-10 md:col-span-3 md:col-start-10">
+            <div className="col-span-12 row-span-full row-start-1 md:col-span-3 md:col-start-10 print:col-span-3 print:col-start-10">
               <motion.div
                 variants={child}
                 className="flex h-full items-center justify-center"
@@ -192,12 +192,12 @@ export const CV = () => {
           </div>
 
           <div className=" grid w-full grid-cols-12 gap-4">
-            <div className="col-span-12 col-start-1 mt-4 print:col-span-9 md:col-span-9">
+            <div className="col-span-12 col-start-1 mt-4 md:col-span-9 print:col-span-9">
               <motion.div
                 variants={child}
-                className="grid grid-cols-12 gap-4 gap-y-5 print:grid-cols-9 md:grid-cols-9"
+                className="grid grid-cols-12 gap-4 gap-y-5 md:grid-cols-9 print:grid-cols-9"
               >
-                <div className="col-span-10 col-start-3 mt-3 print:col-span-7 print:col-start-3 md:col-span-7 md:col-start-3">
+                <div className="col-span-10 col-start-3 mt-3 md:col-span-7 md:col-start-3 print:col-span-7 print:col-start-3">
                   <Headline level={2}>Education</Headline>
                 </div>
 
@@ -208,9 +208,9 @@ export const CV = () => {
 
               <motion.div
                 variants={child}
-                className="mt-4 grid grid-cols-12 gap-4 gap-y-5 print:grid-cols-9 md:grid-cols-9"
+                className="mt-4 grid grid-cols-12 gap-4 gap-y-5 md:grid-cols-9 print:grid-cols-9"
               >
-                <div className="col-span-10 col-start-3 mt-3 print:col-span-7 print:col-start-3 md:col-span-7 md:col-start-3">
+                <div className="col-span-10 col-start-3 mt-3 md:col-span-7 md:col-start-3 print:col-span-7 print:col-start-3">
                   <Headline level={2}>Professional Experience</Headline>
                 </div>
 
@@ -220,7 +220,7 @@ export const CV = () => {
               </motion.div>
             </div>
 
-            <div className="col-span-12 mt-3 print:col-span-3 md:col-span-3">
+            <div className="col-span-12 mt-3 md:col-span-3 print:col-span-3">
               <motion.div variants={child}>
                 <Headline level={2}>
                   <span>Skills</span>
@@ -236,7 +236,7 @@ export const CV = () => {
                 </Headline>
               </motion.div>
 
-              <div className="print:!columns-1 xs:columns-2 md:columns-1">
+              <div className="xs:columns-2 md:columns-1 print:!columns-1">
                 {(
                   [
                     'Languages',

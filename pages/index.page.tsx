@@ -50,7 +50,7 @@ export const Home = () => {
         </section>
 
         <section className="relative flex min-h-[400px] flex-col items-start justify-center bg-contessaRed p-[50px] lg:w-1/2 lg:p-[100px]">
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 lg:top-1/2 lg:left-0">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:top-1/2">
             <motion.div variants={child}>
               <CenterButton />
             </motion.div>
@@ -60,7 +60,7 @@ export const Home = () => {
             variants={child}
             className="flex w-full flex-col items-center justify-center lg:max-w-[750px]"
           >
-            <div className="pt-[75px] pb-3 lg:p-0">
+            <div className="pb-3 pt-[75px] lg:p-0">
               <div className="hidden max-w-[400px] lg:block">
                 <Avatar bg="waferWhite" />
               </div>

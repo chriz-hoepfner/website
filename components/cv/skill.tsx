@@ -22,7 +22,7 @@ const Star = ({ variant }: { variant: 'full' | 'half' }) => {
         'w-[17px]': variant === 'full',
       })}
     >
-      <span className="absolute top-1/2 right-0 inline-block -translate-y-1/2 text-right">
+      <span className="absolute right-0 top-1/2 inline-block -translate-y-1/2 text-right">
         ★
       </span>
     </span>

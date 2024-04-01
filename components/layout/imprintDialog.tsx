@@ -1,5 +1,3 @@
-import { useCallback, useEffect, useState } from 'react';
-
 import classNames from 'classnames';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -52,7 +50,7 @@ export const ImprintDialog = () => {
               onClick={e => e.stopPropagation()}
             >
               <button
-                className="absolute top-4 right-5 text-2xl leading-none"
+                className="absolute right-5 top-4 text-2xl leading-none"
                 onClick={closeDialog}
                 title="Close dialog"
               >
