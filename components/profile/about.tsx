@@ -60,9 +60,9 @@ export const About = () => {
           <div className="mt-10 text-xs uppercase">{'//'} About me</div>
 
           <h2 className="mt-4 text-2xl font-bold leading-[1.7] xs:text-3xl xs:leading-[1.5]">
-            Hi, I&apos;m Chris, a Software Engineer from Berlin with{' '}
-            <strong>{experienceInYears}+ years of experience</strong> in
-            software development.
+            Hi, I&apos;m Chris, a seasoned software Software Engineer from
+            Berlin with{' '}
+            <strong>{experienceInYears}+ years of experience</strong>.
           </h2>
         </motion.div>
 
@@ -70,11 +70,9 @@ export const About = () => {
           variants={child}
           className="text-xl leading-[1.7] xs:leading-[1.5]"
         >
-          <p className="mt-7"></p>
-
           <p className="mt-3">
-            I just started a new challenge as{' '}
-            <strong>Fullstack Engineer</strong> at <strong>Cozero</strong>{' '}
+            Since 2023, I&apos;ve been embracing my latest challenge as{' '}
+            <strong>Technical Lead</strong> at <strong>Cozero</strong>,
             supporting companies on their decarbonization journey.
           </p>
 
@@ -82,28 +80,16 @@ export const About = () => {
             <Foldable>
               <div className="mt-6 leading-[1.8]">
                 <p>
-                  In the past, I have worked with many companies (startups and
-                  PE), supporting them with{' '}
-                  <strong>
-                    audits, system design, development and recruiting
-                  </strong>
-                  . During my time at Project A, I had the opportunity to gain
-                  first leadership experience while{' '}
-                  <strong>leading a great team</strong> of six frontend
-                  engineers.
+                  Throughout my career, I&apos;ve had the privilege of working
+                  with many exceptional teams and companies across diverse
+                  industries and domains.
                 </p>
 
                 <p className="mt-3">
-                  This year, as technical <strong>co-founder</strong>, I took
-                  the exciting chance to kick-start a <strong>SaaS B2B</strong>{' '}
-                  company. It helped me a lot to gain a more holistic view on
-                  the <strong>business value of tech</strong>. After
-                  successfully <strong>launching an MVP</strong> to customers
-                  and securing <strong>pre-seed VC funding</strong>, I decided
-                  to end this journey.
+                  I&apos;ve also founded my own company, an experience that
+                  deepened my understanding of the intersection between
+                  technology and business value.
                 </p>
-
-                <p className="mt-3">Now it&apos;s time to start a new one!</p>
               </div>
             </Foldable>
           </div>

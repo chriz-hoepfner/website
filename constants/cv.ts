@@ -40,6 +40,16 @@ export const EDUCATION_STAGES: TTimelineItem[] = [
 export const PROFESSIONAL_STAGES: TTimelineItem[] = [
   {
     important: true,
+    from: 'March 2023',
+    to: 'Present',
+    title: 'Cozero',
+    subtitle: 'Technical Lead',
+    description:
+      'Leading five engineers within a cross-functional product team, taking ownership of delivery and ensuring technical excellence. Supporting product strategy and technical recruiting, driving processes and technical innovation.',
+    tech: 'TypeScript, NestJS, React, AWS, Postgres, Docker, Dagster, Jest, Cypress, GitHub Actions',
+  },
+  {
+    important: true,
     from: 'Jan 2022',
     to: 'Dec 2022',
     title: 'acehub',
@@ -59,7 +69,6 @@ export const PROFESSIONAL_STAGES: TTimelineItem[] = [
     tech: 'TypeScript, Vue.js, VueX, SCSS Modules, Jest, KeyCloak, Cypress, GitHub Actions',
   },
   {
-    important: true,
     from: 'Feb 2020',
     to: 'May 2022',
     title: 'Votesquare',
@@ -75,9 +84,9 @@ export const PROFESSIONAL_STAGES: TTimelineItem[] = [
       {
         from: 'Dec 2018',
         to: 'Jan 2020',
+        subtitle: 'Teamlead Frontend Engineering',
         description:
           'Additional: Resource planning, employee support, reviews & development, team strategy development',
-        subtitle: 'Teamlead Frontend Engineering',
       },
       {
         from: 'Jun 2018',

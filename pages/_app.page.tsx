@@ -10,6 +10,9 @@ import { useDarkModeDetection } from './_app.hooks';
 export default function App({ Component, pageProps }: AppProps) {
   useDarkModeDetection();
 
+  const experienceInYears = new Date().getFullYear() - 2013;
+  const description = `Hi, I'm Chris, a Software Engineer from Berlin with ${experienceInYears}+ years of experience in software development. Check out my website and get in touch to work with me.`;
+
   return (
     <>
       <Head>
@@ -20,10 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <title>Website | Christian Höpfner</title>
 
-        <meta
-          name="description"
-          content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development. Check out my website and get in touch to work with me."
-        />
+        <meta name="description" content={description} />
 
         <meta
           key="og:title"
@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta
           key="og:description"
           property="og:description"
-          content="Hi, I'm a Software Engineer from Berlin with 10+ years of experience in Frontend/Full-Stack development. Check out my website and get in touch to work with me."
+          content={description}
         />
 
         <meta
