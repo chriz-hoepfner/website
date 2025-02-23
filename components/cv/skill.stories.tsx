@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { flatten, unflatten } from 'flat';
 
 import { Skill as SkillComponent } from './skill';
@@ -17,9 +17,9 @@ export default {
       if: { arg: 'never' },
     },
   },
-} as ComponentMeta<typeof SkillComponent>;
+} as Meta<typeof SkillComponent>;
 
-const Template: ComponentStory<typeof SkillComponent> = args => (
+const Template: StoryFn<typeof SkillComponent> = args => (
   <SkillComponent {...unflatten(args)}>
     Incididunt pariatur sit nulla eiusmod
   </SkillComponent>

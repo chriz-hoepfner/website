@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Companies as CompaniesComponent } from './companies';
 
 export default {
   title: 'Components/Profile/Companies',
   component: CompaniesComponent,
-} as ComponentMeta<typeof CompaniesComponent>;
+} as Meta<typeof CompaniesComponent>;
 
-export const Companies: ComponentStory<typeof CompaniesComponent> = args => (
+const Template: StoryFn<typeof CompaniesComponent> = args => (
   <CompaniesComponent {...(args as object)} />
 );
+
+export const Companies = Template.bind({});

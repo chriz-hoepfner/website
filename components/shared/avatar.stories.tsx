@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Avatar as AvatarComponent } from './avatar';
 
@@ -13,9 +13,9 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof AvatarComponent>;
+} as Meta<typeof AvatarComponent>;
 
-const Template: ComponentStory<typeof AvatarComponent> = args => (
+const Template: StoryFn<typeof AvatarComponent> = args => (
   <AvatarComponent {...args} />
 );
 

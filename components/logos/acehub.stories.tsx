@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { AcehubLogo as AcehubLogoComponent } from './acehub';
 
 export default {
   title: 'Components/Logos/AcehubLogo',
   component: AcehubLogoComponent,
-} as ComponentMeta<typeof AcehubLogoComponent>;
+} as Meta<typeof AcehubLogoComponent>;
 
-export const AcehubLogo: ComponentStory<typeof AcehubLogoComponent> = args => (
+const Template: StoryFn<typeof AcehubLogoComponent> = args => (
   <AcehubLogoComponent {...(args as object)} />
 );
+
+export const AcehubLogo = Template.bind({});

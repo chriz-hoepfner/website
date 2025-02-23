@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Headline as HeadlineComponent } from './headline';
 
@@ -11,9 +11,9 @@ export default {
       control: { type: 'select' },
     },
   },
-} as ComponentMeta<typeof HeadlineComponent>;
+} as Meta<typeof HeadlineComponent>;
 
-const Template: ComponentStory<typeof HeadlineComponent> = args => (
+const Template: StoryFn<typeof HeadlineComponent> = args => (
   <HeadlineComponent {...args}>
     Incididunt pariatur sit nulla eiusmod
   </HeadlineComponent>

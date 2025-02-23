@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Skills as SkillsComponent } from './skills';
 
 export default {
   title: 'Components/Profile/Skills',
   component: SkillsComponent,
-} as ComponentMeta<typeof SkillsComponent>;
+} as Meta<typeof SkillsComponent>;
 
-export const Skills: ComponentStory<typeof SkillsComponent> = args => (
+const Template: StoryFn<typeof SkillsComponent> = args => (
   <SkillsComponent {...(args as object)} />
 );
+
+export const Skills = Template.bind({});

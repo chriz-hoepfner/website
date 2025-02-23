@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { CleverShuttleLogo as CleverShuttleLogoComponent } from './cleverShuttle';
 
 export default {
   title: 'Components/Logos/CleverShuttleLogo',
   component: CleverShuttleLogoComponent,
-} as ComponentMeta<typeof CleverShuttleLogoComponent>;
+} as Meta<typeof CleverShuttleLogoComponent>;
 
-export const CleverShuttleLogo: ComponentStory<
-  typeof CleverShuttleLogoComponent
-> = args => <CleverShuttleLogoComponent {...(args as object)} />;
+const Template: StoryFn<typeof CleverShuttleLogoComponent> = args => (
+  <CleverShuttleLogoComponent {...(args as object)} />
+);
+
+export const CleverShuttleLogo = Template.bind({});

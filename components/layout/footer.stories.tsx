@@ -1,12 +1,12 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Footer as FooterComponent } from './footer';
 
 export default {
   title: 'Components/Layout/Footer',
   component: FooterComponent,
-} as ComponentMeta<typeof FooterComponent>;
+} as Meta<typeof FooterComponent>;
 
-export const Footer: ComponentStory<typeof FooterComponent> = args => (
+export const Footer: StoryFn<typeof FooterComponent> = args => (
   <FooterComponent {...(args as object)} />
 );

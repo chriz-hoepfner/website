@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { About as AboutComponent } from './about';
 
 export default {
   title: 'Components/Profile/About',
   component: AboutComponent,
-} as ComponentMeta<typeof AboutComponent>;
+} as Meta<typeof AboutComponent>;
 
-export const About: ComponentStory<typeof AboutComponent> = args => (
+const Template: StoryFn<typeof AboutComponent> = args => (
   <AboutComponent {...(args as object)} />
 );
+
+export const About = Template.bind({});

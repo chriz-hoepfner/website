@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { CV as CVComponent } from './cv.page';
 
@@ -6,8 +6,10 @@ export default {
   title: 'Pages/CV',
   component: CVComponent,
   parameters: { options: { showPanel: false } },
-} as ComponentMeta<typeof CVComponent>;
+} as Meta<typeof CVComponent>;
 
-export const CV: ComponentStory<typeof CVComponent> = args => (
+const Template: StoryFn<typeof CVComponent> = args => (
   <CVComponent {...(args as object)} />
 );
+
+export const CV = Template.bind({});

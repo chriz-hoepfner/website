@@ -1,13 +1,13 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { TimelineLabel as TimelineLabelComponent } from './timelineLabel';
 
 export default {
   title: 'Components/CV/TimelineLabel',
   component: TimelineLabelComponent,
-} as ComponentMeta<typeof TimelineLabelComponent>;
+} as Meta<typeof TimelineLabelComponent>;
 
-const Template: ComponentStory<typeof TimelineLabelComponent> = args => (
+const Template: StoryFn<typeof TimelineLabelComponent> = args => (
   <TimelineLabelComponent {...args} />
 );
 
